@@ -92,7 +92,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             pow(end.position.x - start.position.x, 2) +
             pow(end.position.y - start.position.y, 2) +
             pow(end.position.z - start.position.z, 2)
-        )
+        ) * 100
         
         updateText(text: "\(abs(distance))", atPosition: end.position)
     }
